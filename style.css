@@ -1,0 +1,225 @@
+:root{
+    /* gradient colors */
+    --bg-light-slate-blue: hsl(252, 100%, 67%);
+    --bg-light-royal-blue: hsl(241, 81%, 54%);
+    
+    --violet-blue-circle: hsla(256, 72%, 46%, 1);
+    --persian-blue-circle: hsla(241, 72%, 46%, 0);
+    
+    --container-height: 600px;
+    --container-left-width: 50vw;
+    --container-right-width: 50vw;
+    --container-left-border-radius: 40px;
+
+    /* neutral colors */
+    --white: hsl(0, 0%, 100%);
+    --pale-blue: hsl(221, 100%, 96%);
+    --light-lavender: hsl(241, 100%, 89%);
+    --dark-gray-blue: hsl(224, 30%, 27%);
+   
+    --title-font-size: 50px;
+    --paragraph-font-size: 18px;
+  
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Hanken Grotesk', sans-serif;
+
+}
+
+body{
+    background-color: lightgray;
+}
+
+.main-container{
+    border-radius: var(--container-left-border-radius);
+    background-color: var(--white);
+    margin: 30px auto;
+    width: fit-content;
+    display: flex;
+    justify-content: space-between;
+}
+
+.container-left{
+    padding: 30px 20px;
+    width: var(--container-left-width);
+    height: var(--container-height);
+    
+    border-radius: var(--container-left-border-radius);
+    background: linear-gradient(
+         var(--bg-light-slate-blue),
+         var(--bg-light-royal-blue));
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.title-container{
+    font-size: 50px;
+    color: var(--light-lavender);
+}
+
+.score-container{
+    
+    /* width: calc(var(--container-left-width)*0.45);
+    height: calc(var(--container-left-width)*0.45);
+    */
+
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+
+    background: linear-gradient(
+        var(--violet-blue-circle),
+        var(--persian-blue-circle));
+
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.score-container > :first-child{
+    color: var(--white);
+    font-size: 70px;
+/* 
+    font-size: calc(var(--container-left-width)*0.15); */
+
+}
+
+.score-container > :last-child{
+    color: var(--light-lavender);
+}
+
+.score-summary-container{
+    width: 90%;
+    color: var(--white);
+    text-align: center;
+}
+
+.score-summary-container > :first-child{
+    font-size: 30px;
+    margin-bottom: 5px;
+}
+
+.score-summary-container > :last-child{
+    font-size: 20px;
+    color: var(--light-lavender);
+}
+
+.container-right{
+    border-radius: var(--container-left-border-radius);
+    padding: 30px 20px;
+    height: var(--container-height);
+    width: var(--container-right-width);
+}
+
+
+
+.container-right{
+    background-color: var(--white);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.title-right{
+    color: var(--dark-gray-blue);
+    font-size: 40px;
+    font-weight: 900;
+    width: 90%;
+    text-align: left;
+}
+
+.result-container{
+    padding: 15px 30px;
+    border-radius: 10px;
+    width: 90%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.result-container > :first-child{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+
+}
+
+.result-container > :last-child{
+    color: grey;
+}
+
+.reaction-result-container{
+    background-color: rgb(239, 218, 218);
+    
+}
+.reaction-result-container > :first-child{
+    color: red;
+}
+
+.memory-result-container{
+    background-color: rgb(239, 236, 213);
+    
+}
+
+.memory-result-container > :first-child{
+    color: rgb(216, 190, 37);
+}
+.verbal-result-container{
+    background-color: rgb(203, 234, 234);
+}
+
+.verbal-result-container > :first-child{
+    color: teal;
+}
+
+.visual-result-container{
+    background-color: rgb(248, 232, 248);
+}
+
+.visual-result-container > :first-child{
+    color: var(--violet-blue-circle);
+}
+
+.result-numerator{
+    font-weight: 900;
+    color: var(--dark-gray-blue);
+}
+
+.container-right button{
+    width: 90%;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 30px;
+    color: var(--light-lavender);
+    background-color: var(--dark-gray-blue);
+}
+
+@media all and (max-width: 600px){
+    .main-container{
+        margin: 0;
+        width: 100%;
+        flex-direction: column;
+        border-radius: 0px;
+    }
+
+    .container-left{
+        width: 100%;
+        border-top-right-radius: 0;
+        border-top-left-radius: 0;
+    }
+
+    .container-right{
+        width: 100%;
+    }
+}

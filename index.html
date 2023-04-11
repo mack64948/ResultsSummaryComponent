@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+  <title> Results summary component</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com"> 
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:ital,wght@0,100;0,300;0,400;0,500;1,100;1,200;1,400&family=Hanken+Grotesk:ital,wght@0,100;0,200;0,300;0,400;1,100;1,200;1,300&family=Inter:wght@100;200;300;400;500;800;900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <div class="main-container">
+  <div class="container-left">
+    <div class="title-container">
+      Your Result
+    </div>
+    
+    <div class="score-container">
+      <p>76</p>
+      <p>of 100</p>
+    </div>
+
+    <div class="score-summary-container">
+      <p>Great</p>
+      <p>
+        You scored higher than 65% of the people who have taken these tests.
+      </p>
+  
+    </div>
+</div>
+<div class="container-right">
+  <div class="title-right">Summary</div>
+
+  <div class="result-container reaction-result-container">
+    <p class="result-title">
+      <img src="./assets/images/icon-reaction.svg" alt="">
+      Reaction</p>
+    <p class="result-score"><span class="result-numerator">80</span> / 100</p>
+  </div>
+
+  <div class="result-container memory-result-container">
+    <p class="result-title">
+      <img src="./assets/images/icon-memory.svg" alt="">
+      Memory</p>
+    <p class="result-score"><span class="result-numerator">92</span> / 100</p>
+  </div>
+
+  <div class="result-container verbal-result-container">
+    <p class="result-title">
+      <img src="./assets/images/icon-verbal.svg" alt="">
+      Verbal</p>
+    <p class="result-score"><span class="result-numerator">61</span> / 100</p>
+  </div>
+
+  <div class="result-container visual-result-container">
+    <p class="result-title">
+      <img src="./assets/images/icon-visual.svg" alt="">
+      Visual</p>
+    <p class="result-score"><span class="result-numerator">72</span> / 100</p>
+  </div>
+
+  <button>Continue</button>
+  
+</div>
+</div>
+</body>
+</html>
